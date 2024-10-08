@@ -72,6 +72,5 @@ fileName = input("Enter file path: ")
 nodes = readFile(fileName)
 outlinksRes = calculate_outlinks(nodes)
 noOfNodes = len(outlinksRes)
-#initialValues = [1/noOfNodes] * noOfNodes #initialize the values for round 0
 noOfRounds = int(input("Enter the number of rounds to be processed: "))
 calculateRanks(noOfRounds, noOfNodes)
